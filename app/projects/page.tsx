@@ -48,6 +48,8 @@ export default function ProjectsPage() {
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-contain"
                   priority={index === 0}
+                  quality={85}
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
               </div>
               <div className="absolute inset-0 pointer-events-none" style={{ boxShadow: "inset 0 0 40px rgba(0,0,0,0.12)" }} />

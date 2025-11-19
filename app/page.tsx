@@ -29,7 +29,15 @@ export default function Home() {
             className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary cursor-pointer"
             onClick={() => setIsImagePopupOpen(true)}
           >
-            <Image src="/profile.jpeg" alt="Hemant Soni" fill className="object-cover" priority />
+            <Image 
+              src="/profile.jpeg" 
+              alt="Hemant Soni" 
+              fill 
+              className="object-cover" 
+              priority
+              sizes="(max-width: 768px) 256px, 256px"
+              quality={90}
+            />
           </div>
         </motion.div>
         <motion.div variants={fadeIn("right", 0.3)} className="flex-1 space-y-6 order-2 md:order-1 text-center md:text-left">
@@ -93,6 +101,8 @@ export default function Home() {
                   alt="Hemant Soni"
                   fill
                   className="object-cover rounded-lg shadow-2xl"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={85}
                 />
               </div>
             </motion.div>
@@ -109,9 +119,9 @@ export default function Home() {
             development started during my BCA studies, where I specialized in Full Stack Web Design and Development.
           </p>
           <p>
-            Currently working at KLobTech in Jaipur, I've had the opportunity to work on various exciting projects that
-            have enhanced my skills in ReactJS, Material UI, and Tailwind CSS. I enjoy building responsive and
-            user-friendly interfaces that provide seamless experiences.
+            Previously, I worked at KLobTech in Jaipur where I had the opportunity to work on various exciting projects that
+            enhanced my skills in ReactJS, Material UI, and Tailwind CSS. Currently, I'm pursuing my Master of Computer Applications (MCA) 
+            while continuing to build responsive and user-friendly interfaces that provide seamless experiences.
           </p>
           <p>
             When I'm not coding, I'm constantly learning new technologies and frameworks to stay updated with the

@@ -34,7 +34,7 @@ export default function ExperiencePage() {
               <h3 className="text-xl font-bold">Full Stack Developer</h3>
               <div className="text-muted-foreground flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>Nov 2024 – Present</span>
+                <span>Nov 2024 – May 2025</span>
               </div>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground mb-4">

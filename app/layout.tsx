@@ -7,7 +7,12 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { Toaster } from "@/components/ui/toaster"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  variable: "--font-inter",
+})
 
 export const metadata: Metadata = {
   icons: {
@@ -15,7 +20,16 @@ export const metadata: Metadata = {
   },
   title: "Hemant Soni - Full Stack Developer",
   description: "Portfolio of Hemant Soni, a Full Stack Developer skilled in JavaScript, ReactJS, NodeJS and MongoDB.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://your-domain.vercel.app'),
+  openGraph: {
+    title: "Hemant Soni - Full Stack Developer",
+    description: "Portfolio of Hemant Soni, a Full Stack Developer skilled in JavaScript, ReactJS, NodeJS and MongoDB.",
+    type: "website",
+  },
+  other: {
+    'format-detection': 'telephone=no',
+  },
 }
 
 export default function RootLayout({
@@ -25,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className} suppressHydrationWarning>
+      <body className={`${inter.className} ${inter.variable}`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
