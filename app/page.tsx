@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { ArrowRight, X } from "lucide-react"
+import { ArrowRight, X, FileDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { fadeIn, staggerContainer } from "@/lib/animations"
@@ -48,9 +48,15 @@ export default function Home() {
             Full Stack Developer skilled in JavaScript, ReactJS, NodeJS and MongoDB. Proficient in building and
             optimizing web applications, and delivering seamless user experiences.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Button asChild>
               <Link href="/contact">Get in Touch</Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <a href="/resume.pdf" download className="flex items-center gap-2">
+                <FileDown className="h-4 w-4" />
+                Download Resume
+              </a>
             </Button>
             <Button variant="outline" asChild>
               <Link href="/projects">View Projects</Link>

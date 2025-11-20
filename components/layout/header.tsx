@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
-import { Menu, X } from "lucide-react"
+import { Menu, X, FileDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -85,9 +85,17 @@ export function Header() {
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           ) : (
-            <Button asChild>
-              <Link href="/contact">Contact Me</Link>
-            </Button>
+            <>
+              <Button variant="outline" asChild>
+                <a href="/Hemant_Soni_FullStackDeveloper.pdf" download className="flex items-center gap-2">
+                  <FileDown className="h-4 w-4" />
+                  Resume
+                </a>
+              </Button>
+              <Button asChild>
+                <Link href="/contact">Contact Me</Link>
+              </Button>
+            </>
           )}
         </div>
       </div>
@@ -115,6 +123,14 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
+            <a
+              href="/resume.pdf"
+              download
+              className="py-2 transition-colors hover:text-foreground/80 text-foreground/60 flex items-center gap-2"
+            >
+              <FileDown className="h-4 w-4" />
+              Resume
+            </a>
           </nav>
         </motion.div>
       )}

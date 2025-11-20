@@ -13,6 +13,7 @@ import {
   Github,
   Send,
   Code2,
+  FileDown,
 } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -94,10 +95,16 @@ export default function ContactPage() {
         <motion.div variants={fadeIn("right", 0.3)} className="space-y-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Let's Connect</h3>
-            <p className="text-muted-foreground">
+            <p className="text-muted-foreground mb-6">
               Feel free to reach out to me for any opportunities, collaborations,
               or just to say hello!
             </p>
+            <Button asChild className="w-full sm:w-auto">
+              <a href="/resume.pdf" download className="flex items-center gap-2">
+                <FileDown className="h-4 w-4" />
+                Download Resume
+              </a>
+            </Button>
           </div>
 
           <div className="space-y-4">

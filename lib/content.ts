@@ -45,11 +45,11 @@ export const HIGHLIGHT_ITEMS = [
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Frontend Development",
-    skills: ["ReactJS", "Redux", "HTML/CSS", "JavaScript", "Tailwind CSS", "Material UI"],
+    skills: ["ReactJS", "Next.js", "Redux", "HTML/CSS", "JavaScript", "Tailwind CSS", "Material UI"],
   },
   {
     title: "Backend Development",
-    skills: ["NodeJS", "ExpressJS", "MongoDB", "Firebase"],
+    skills: ["NodeJS", "ExpressJS", "MongoDB", "SQL", "Firebase"],
   },
   {
     title: "Tools & Others",
