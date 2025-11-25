@@ -124,7 +124,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="/resume.pdf"
+              href="/Hemant_Soni_FullStackDeveloper.pdf"
               download
               className="py-2 transition-colors hover:text-foreground/80 text-foreground/60 flex items-center gap-2"
             >

@@ -100,7 +100,7 @@ export default function ContactPage() {
               or just to say hello!
             </p>
             <Button asChild className="w-full sm:w-auto">
-              <a href="/resume.pdf" download className="flex items-center gap-2">
+              <a href="/Hemant_Soni_FullStackDeveloper.pdf" download className="flex items-center gap-2">
                 <FileDown className="h-4 w-4" />
                 Download Resume
               </a>

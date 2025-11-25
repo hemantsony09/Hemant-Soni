@@ -53,7 +53,7 @@ export default function Home() {
               <Link href="/contact">Get in Touch</Link>
             </Button>
             <Button variant="outline" asChild>
-              <a href="/resume.pdf" download className="flex items-center gap-2">
+              <a href="/Hemant_Soni_FullStackDeveloper.pdf" download className="flex items-center gap-2">
                 <FileDown className="h-4 w-4" />
                 Download Resume
               </a>
